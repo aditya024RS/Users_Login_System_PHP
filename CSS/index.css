@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", "sans-serif";
+    --site-color-1: #0866ff;
+    --site-color-2: #97c0ff;
+    --box-shadow: #cccccc;
+    --footer-color: #858687;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+h1 {
+    font-size: 4.6rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3.4rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+ul {
+    list-style: none;
+}
+
+input, textarea, select {
+    padding: 10px;
+    color: #000;
+}
+
+.wrapper-main {
+    width: 1000px;
+}
+
+
+/*MAIN  login SECTION*/
+
+.index-login-main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-main-about {
+    width: 460px;
+    padding-bottom: 10vh;
+}
+
+.index-main-about h1 {
+    color: var(--site-color-1);
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.2;
+}
+
+.index-main-about p {
+    color: #000;
+    font-size: 2.4rem;
+}
+
+.index-main-form {
+    padding: 20px;
+    width: 360px;
+    background-color: #fff;
+    box-shadow: 0 0 10px var(--box-shadow);
+    border-radius: 10px;
+}
+
+.index-main-form form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.index-main-form input {
+    width: calc(100% - 20px);
+    height: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #000;
+}
+
+.index-main-form input:focus {
+    border: 1px solid blue;
+    outline: 2px solid var(--site-color-2);
+}
+
+.index-main-form button {
+    width: 100%;
+    height: 50px;
+    font-size: 2.2rem;
+    color: #e9f3ff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--site-color-1);
+}
+
+.index-main-form button:hover {
+    border: 1px solid blue;
+    outline: 2px solid var(--site-color-2);
+    transition: all 100ms ease-in-out;
+}
+
+.index-main-form a {
+    font-size: 1.4rem;
+    color: var(--site-color-1);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--site-color-1);
+}
+
+.index-main-form a:hover {
+    box-shadow: 0 0 4px var(--site-color-2);
+}
+
+.index-create-account {
+    width: fit-content;
+    padding: 10px;
+    background-color: #42b72d;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #e9f3ff;
+    font-weight: 600;
+    margin-left: 90px;
+    border-radius: 8px;
+}
+
+.index-create-account:hover {
+    background-color: #2ea11a;
+    transition: all 100ms ease-in-out;
+}

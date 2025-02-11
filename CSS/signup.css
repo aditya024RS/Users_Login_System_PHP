@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", "sans-serif";
+    --site-color-1: #0866ff;
+    --site-color-2: #97c0ff;
+    --box-shadow: #cccccc;
+    --footer-color: #858687;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+h1 {
+    font-size: 4.6rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3.4rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+ul {
+    list-style: none;
+}
+
+input, textarea, select {
+    padding: 10px;
+    color: #000;
+}
+
+.wrapper-main {
+    width: 1000px;
+}
+
+
+/* SIGN UP */
+
+.signup-section-main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    margin-top: 40px;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container h1 {
+    flex-basis: 100%;
+    color: var(--site-color-1);
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    padding: 20px;
+    background-color: #fff;
+    width: calc(100% - 600px);
+    box-shadow: 0 0 10px var(--box-shadow);
+    border-radius: 10px;
+}
+
+.signup-form form h2 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.signup-form form p {
+    color: var(--footer-color);
+}
+
+.signup-form form {
+    border-top: 1px solid rgb(199, 198, 198);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+form input:focus, form select:focus {
+    border: 1px solid blue;
+    outline: 2px solid var(--site-color-2);
+}
+
+form input, select {
+    font-size: 1.8rem;
+    border-radius: 5px;
+    color: #000;
+}
+
+form .signup-form-div1 {
+    margin-top: 10px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.signup-form-div1 input {
+    width: calc(50% - 20px);
+}
+
+form .its-input {
+    width: calc(100% - 20px);
+}
+
+.signup-form form p, a {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+form .signup-form-div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+}
+
+form .signup-form-div3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.signup-form-div2 p, .signup-form-div3 p {
+    flex-basis: 100%;
+}
+
+.signup-form-div2 select {
+    width: calc(35% - 20px);
+}
+
+.signup-form-div3 .div3-div {
+    width: calc(32% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    font-size: 1.6rem;
+}
+
+.signup-form-div3 .div3-div input:focus{
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+form button {
+    width: calc(50% - 20px);
+    margin: 10px 0;
+    padding: 6px 0;
+    background-color: #2ea11a;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+}
+
+form button:hover {
+    background-color: #699c5d;
+    transition: all 100ms ease-in-out;
+}
+
+form button:focus {
+    background-color: #2ea11a;
+    transition: all 100ms ease-in-out;
+}
+
+.signup-form .log-in {
+    color: var(--site-color-1);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.signup-form .log-in:hover {
+    border-bottom: 1px solid #0866ff;
+    transition: all .1s ease-in-out;
+}
+
+.form-errors {
+    color: red !important;
+    font-size: 1.4rem !important;
+    line-height: 1.2;
+    text-shadow: 0 0 4px rgb(183, 210, 253);
+    text-align: center;
+}
+
+.form-success {
+    color: #2ea11a;
+    font-size: 1.8rem;
+    text-shadow: 0 0 4px rgb(183, 210, 253);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: 50%; /* Reduce base font size for smaller screens */
+    }
+
+    .wrapper-main {
+        width: 100%; /* Full width for mobile */
+        padding: 0 20px; /* Add padding to avoid content touching edges */
+    }
+
+    .signup-section-main {
+        height: auto; /* Allow content to determine height */
+        padding: 20px 0; /* Add padding for better spacing */
+    }
+
+    .signup-container {
+        margin-top: 20px; /* Reduce top margin */
+        padding-bottom: 20px; /* Reduce bottom padding */
+    }
+
+    .signup-container h1 {
+        font-size: 4.8rem; /* Reduce heading size for mobile */
+        margin-bottom: 20px; /* Add spacing below the heading */
+    }
+
+    .signup-form {
+        width: 100%; /* Full width for mobile */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .signup-form h2 {
+        font-size: 2.4rem; /* Reduce heading size */
+    }
+
+    .signup-form p {
+        font-size: 1.4rem; /* Slightly reduce paragraph font size */
+    }
+
+    .signup-form form {
+        row-gap: 8px; /* Reduce gap between form elements */
+    }
+
+    .signup-form-div1 {
+        flex-direction: column; /* Stack first name and surname inputs vertically */
+        row-gap: 8px; /* Add gap between stacked inputs */
+    }
+
+    .signup-form-div1 input {
+        width: 100%; /* Full width for stacked inputs */
+    }
+
+    .its-input {
+        width: 100%; /* Full width for single-line inputs */
+    }
+
+    .signup-form-div2, .signup-form-div3 {
+        flex-direction: column; /* Stack date of birth and gender options vertically */
+        row-gap: 8px; /* Add gap between stacked elements */
+    }
+
+    .signup-form-div2 select {
+        width: 100%; /* Full width for dropdowns */
+    }
+
+    .signup-form-div3 .div3-div {
+        width: 100%; /* Full width for gender options */
+        justify-content: flex-start; /* Align radio buttons to the left */
+        padding: 8px; /* Adjust padding for better spacing */
+    }
+
+    form button {
+        width: 100%; /* Full width for the sign-up button */
+        font-size: 1.8rem; /* Slightly reduce button font size */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .signup-form .log-in {
+        font-size: 1.2rem; /* Slightly reduce font size for the login link */
+    }
+
+    .errors-container {
+        padding: 0 10px; /* Add padding for error messages */
+    }
+
+    .signup-form p .form-errors, .signup-form p .form-success {
+        font-size: 1.4rem; /* Reduce font size for error/success messages */
+    }
+}
