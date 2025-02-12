@@ -50,3 +50,32 @@ footer {
     text-align: center;
     opacity: 0.7;
 }
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    
+    .index-footer-sitemap {
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    .index-footer-sitemap ul:nth-child(2) {
+        max-width: none;
+        padding-left: 0;
+    }
+    
+    .index-footer-sitemap ul:nth-child(3) {
+        text-align: center;
+    }
+    
+    .index-footer-sitemap ul:nth-child(1) a {
+        font-size: 1.6rem;
+    }
+    
+    .index-footer-sitemap ul:nth-child(1) a:hover {
+        border-bottom: 1px solid var(--footer-color);
+        transition: all 100ms ease-in-out;
+    }
+
+}

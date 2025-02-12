@@ -241,90 +241,75 @@ form button:focus {
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 768px) {
-    :root {
-        font-size: 50%; /* Reduce base font size for smaller screens */
-    }
 
     .wrapper-main {
-        width: 100%; /* Full width for mobile */
-        padding: 0 20px; /* Add padding to avoid content touching edges */
+        width: 100%;
+        padding: 0 20px;
     }
 
     .signup-section-main {
-        height: auto; /* Allow content to determine height */
-        padding: 20px 0; /* Add padding for better spacing */
+        height: auto;
+        padding: 20px 0;
     }
 
     .signup-container {
-        margin-top: 20px; /* Reduce top margin */
-        padding-bottom: 20px; /* Reduce bottom padding */
+        margin-top: 20px;
+        padding-bottom: 40px;
     }
 
     .signup-container h1 {
-        font-size: 4.8rem; /* Reduce heading size for mobile */
-        margin-bottom: 20px; /* Add spacing below the heading */
+        font-size: 4.8rem;
+        margin-bottom: 20px;
     }
 
     .signup-form {
-        width: 100%; /* Full width for mobile */
-        padding: 15px; /* Reduce padding for smaller screens */
+        width: 100%;
+        padding: 20px;
     }
 
     .signup-form h2 {
-        font-size: 2.4rem; /* Reduce heading size */
+        font-size: 2.4rem;
     }
 
     .signup-form p {
-        font-size: 1.4rem; /* Slightly reduce paragraph font size */
+        font-size: 1.4rem;
     }
 
     .signup-form form {
-        row-gap: 8px; /* Reduce gap between form elements */
-    }
-
-    .signup-form-div1 {
-        flex-direction: column; /* Stack first name and surname inputs vertically */
-        row-gap: 8px; /* Add gap between stacked inputs */
+        row-gap: 8px;
     }
 
     .signup-form-div1 input {
-        width: 100%; /* Full width for stacked inputs */
+        width: 100%;
     }
 
     .its-input {
-        width: 100%; /* Full width for single-line inputs */
-    }
-
-    .signup-form-div2, .signup-form-div3 {
-        flex-direction: column; /* Stack date of birth and gender options vertically */
-        row-gap: 8px; /* Add gap between stacked elements */
+        width: 100%;
     }
 
     .signup-form-div2 select {
-        width: 100%; /* Full width for dropdowns */
+        width: calc((100% - 40px) / 3);
     }
 
     .signup-form-div3 .div3-div {
-        width: 100%; /* Full width for gender options */
-        justify-content: flex-start; /* Align radio buttons to the left */
-        padding: 8px; /* Adjust padding for better spacing */
+        width: calc((100% - 74px) / 3);
     }
 
     form button {
-        width: 100%; /* Full width for the sign-up button */
-        font-size: 1.8rem; /* Slightly reduce button font size */
-        margin: 10px 0; /* Adjust margin for better spacing */
+        width: 60%;
+        font-size: 1.8rem;
+        margin: 10px 0 20px;
     }
 
     .signup-form .log-in {
-        font-size: 1.2rem; /* Slightly reduce font size for the login link */
+        font-size: 1.2rem;
     }
 
-    .errors-container {
-        padding: 0 10px; /* Add padding for error messages */
+    .errors {
+        padding: 0 10px;
     }
 
     .signup-form p .form-errors, .signup-form p .form-success {
-        font-size: 1.4rem; /* Reduce font size for error/success messages */
+        font-size: 1.4rem;
     }
 }
