@@ -1,5 +1,6 @@
 <?php
-    if($_SERVER);
+    require_once 'includes/login_view.inc.php';
+    require_once 'includes/config_session.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +23,10 @@
         </div>
         <div class="index-main-form">
             <form action="includes/login.inc.php" method="post">
-                <input type="text" name="username" id="username" placeholder="Email address or phone number">
+                <?php check_login_errors(); ?>
+                <input type="text" name="username" id="username" placeholder="Email address or phone number" autocomplete="$_COOKIE">
                 <input type="password" name="pwd" id="pwd" placeholder="Password"> <br>
-                <button type="button">Log in</button>
+                <button type="submit">Log in</button>
                 <a href="#">Forgotten Password?</a>
             </form>
             <a href="sign_up.php" class><div class="index-create-account">

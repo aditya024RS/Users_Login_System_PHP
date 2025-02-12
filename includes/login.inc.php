@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $result = get_user($pdo, $username);
 
-        if (is_username_wrong($reult)) {
+        if (is_username_wrong($result)) {
             $errors["login_incorrect"] = "Incorrect login info!";
         }
         if (!is_username_wrong($result) && is_password_wrong($pwd, $result["pwd"])) {
@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once 'config_session.inc.php';
 
         if ($errors) {
-            $_SESSION["errors_signup"] = $errors;
-            header("Location: ../sign_up.php");
+            $_SESSION["errors_login"] = $errors;
+            header("Location: ../index.php");
             die();
         }
         

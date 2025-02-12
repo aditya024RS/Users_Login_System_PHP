@@ -98,6 +98,7 @@ input, textarea, select {
 .index-main-form form {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid #b0b0b0;
@@ -135,6 +136,11 @@ input, textarea, select {
     transition: all 100ms ease-in-out;
 }
 
+.index-main-form button:focus {
+    border: none;
+    outline: none;
+}
+
 .index-main-form a {
     font-size: 1.4rem;
     color: var(--site-color-1);
@@ -161,4 +167,25 @@ input, textarea, select {
 .index-create-account:hover {
     background-color: #2ea11a;
     transition: all 100ms ease-in-out;
+}
+
+.errors {
+    margin-bottom: 10px;
+}
+
+.form-errors {
+    color: red !important;
+    font-size: 1.4rem !important;
+    line-height: 1.2;
+    text-shadow: 0 0 4px rgb(183, 210, 253);
+    text-align: center;
+}
+
+.form-success {
+    color: #2ea11a !important;
+    font-size: 1.6rem !important;
+    line-height: 1.2;
+    text-shadow: 0 0 4px rgb(183, 210, 253);
+    text-align: center;
+    margin-bottom: 10px;
 }

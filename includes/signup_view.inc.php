@@ -30,17 +30,17 @@ function signup_inputs() {
 function check_signup_errors() {
     if (isset($_SESSION["errors_signup"])) {
         $errors = $_SESSION["errors_signup"];
+
+        echo "<div class='errors'>";
         foreach ($errors as $error) {
             echo " <p class='form-errors'>" . $error . "</p>";
         }
+        echo "</div>";
 
         unset($_SESSION["errors_signup"]);
 
     } else if (isset($_GET["signup"]) && $_GET["signup"] === "success") {
 
-        ?><script type="text/javascript">
-            alert("Signup success!");
-        </script><?php
-        //echo " <p class='form-success'>Signup success!</p>";
+        echo " <p class='form-success'>Signup success!</p>";
     }
 }
