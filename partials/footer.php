@@ -23,7 +23,7 @@
             </div>
 
             <div class="index-footer-copyright">
-                    <p>adibook 2024 © | copyright claim <br>All rights reserved</p>
+                    <p>adibook 2025 © | copyright claim <br>All rights reserved</p>
             </div>
         </div>
     </footer>
