@@ -160,7 +160,7 @@ input, textarea, select {
     font-size: 1.8rem;
     color: #e9f3ff;
     font-weight: 600;
-    margin-left: 90px;
+    justify-self: center;
     border-radius: 8px;
 }
 
@@ -188,4 +188,45 @@ input, textarea, select {
     text-shadow: 0 0 4px rgb(183, 210, 253);
     text-align: center;
     margin-bottom: 10px;
+}
+
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+
+    .index-login-main {
+        height: auto;
+    }
+
+    .wrapper-main {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .login-container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px 0;
+    }
+    
+    .index-main-about {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .index-main-about h1 {
+        font-size: 5rem;
+        line-height: 1.5;
+    }
+    
+    .index-main-about p {
+        font-size: 1.8rem;
+        word-wrap: break-word;
+    }
+    
+    .index-main-form {
+        width: calc(100% - 40px);
+        margin-bottom: 80px;
+    }
+    
 }

@@ -19,7 +19,7 @@
         <div class="wrapper-main login-container">
         <div class="index-main-about">
             <h1>adibook</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Adibook helps you connect and share with the people in your life.</p>
         </div>
         <div class="index-main-form">
             <form action="includes/login.inc.php" method="post">
