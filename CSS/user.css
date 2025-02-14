@@ -1,0 +1,197 @@
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1c1e21;
+}
+
+h1 {
+  font-size: 4.6rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 3.4rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+ul {
+  list-style: none;
+}
+
+input, textarea, select {
+  padding: 10px;
+  color: #000;
+}
+
+.wrapper-main {
+  width: 1000px;
+}
+
+/* Profile container styling */
+.profile-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative overlay */
+.profile-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+/* Profile header styling */
+.profile-container h1 {
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #1877f2;
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile info styling */
+.profile-info {
+  text-align: left;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-info p {
+  margin: 15px 0;
+  font-size: 1.6rem;
+  color: #606770;
+  display: flex;
+  align-items: center;
+}
+
+.profile-info strong {
+  color: #1c1e21;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+/* Icon styling for profile info */
+.profile-info p::before {
+  content: '•';
+  color: #1877f2;
+  margin-right: 10px;
+  font-size: 2.0rem;
+}
+
+/* Profile actions styling */
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-actions .btn {
+  background: #1877f2;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.profile-actions .btn:hover {
+  background-color: #166fe5;
+  transform: translateY(-1px);
+}
+
+/* Logout button specific styling */
+.profile-actions .btn.logout {
+  background-color: #e4e6eb;
+  color: #1c1e21;
+}
+
+.profile-actions .btn.logout:hover {
+  background-color: #d8dadf;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .profile-container {
+      width: 100%;
+      margin: 10px;
+      padding: 20px;
+  }
+
+  .profile-container h1 {
+      font-size: 2.4rem;
+  }
+
+  .profile-info p {
+      font-size: 1.4rem;
+  }
+
+  .profile-actions .btn {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-container h1 {
+      font-size: 2.0rem;
+  }
+
+  .profile-info p {
+      font-size: 1.2rem;
+  }
+
+  .profile-actions .btn {
+      font-size: 1.2rem;
+      padding: 10px 15px;
+  }
+}

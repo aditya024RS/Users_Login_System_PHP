@@ -223,7 +223,7 @@ form button:focus {
 
 .form-errors {
     color: red !important;
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.2;
     text-shadow: 0 0 4px rgb(183, 210, 253);
     text-align: center;
@@ -231,7 +231,7 @@ form button:focus {
 
 .form-success {
     color: #2ea11a !important;
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.2;
     text-shadow: 0 0 4px rgb(183, 210, 253);
     text-align: center;

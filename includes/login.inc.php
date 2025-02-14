@@ -39,10 +39,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $_SESSION["user_id"] = $result["id"];
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
+        $_SESSION["user_firstname"] = $result["firstname"];
+        $_SESSION["user_surname"] = $result["surname"];
+        $_SESSION["user_DOBday"] = $result["DOBday"];
+        $_SESSION["user_DOBmonth"] = $result["DOBmonth"];
+        $_SESSION["user_DOByear"] = $result["DOByear"];
 
         $_SESSION["last_regeneration"] = time();
 
-        header("Location: ../index.php?login=success");
+        header("Location: ../user.php?login=success");
         $pdo = null;
         $statement = null;
 
