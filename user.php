@@ -27,19 +27,23 @@ $DOByear = $_SESSION['user_DOByear'];
     <title>User Profile</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/user.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <div class="wrapper-main profile-container">
+  <div class="wrapper-main user-profile-main">
+    <div class="profile-container">
         <h1>Welcome, <?php echo htmlspecialchars($username); ?>!</h1>
         <div class="profile-info">
             <p><strong>Name:</strong> <?php echo htmlspecialchars($firstname . " " .$surname); ?></p>
             <p><strong>Date Of Birth:</strong> <?php echo htmlspecialchars($DOBday . "/" .$DOBmonth . "/" . $DOByear); ?></p>
-            <!-- Add more user information here -->
         </div>
         <div class="profile-actions">
             <a href="#" class="btn">Edit Profile</a>
             <a href="includes/logout.inc.php" class="btn logout">Logout</a>
         </div>
     </div>
+  </div>
+
+    <?php include 'partials/footer.php';?>
 </body>
 </html>

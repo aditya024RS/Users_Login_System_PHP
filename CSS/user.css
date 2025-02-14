@@ -1,18 +1,11 @@
 :root {
   font-size: 62.5%;
-  font-family: "Roboto", "sans-serif";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --footer-color: #858687;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f2f5;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  color: #1c1e21;
 }
 
 h1 {
@@ -52,6 +45,15 @@ input, textarea, select {
 
 .wrapper-main {
   width: 1000px;
+}
+
+.user-profile-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1c1e21;
 }
 
 /* Profile container styling */
