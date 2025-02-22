@@ -29,3 +29,7 @@ function is_username_taken(object $pdo, string $username) {
 function create_user(object $pdo, string $username, string $pwd, string $firstname, string $surname, string $gender, int $DOBday, int $DOBmonth, int $DOByear) {
     set_user($pdo, $username, $pwd, $firstname, $surname, $gender, $DOBday, $DOBmonth, $DOByear);
 }
+
+function create_profile(object $pdo, int $id) {
+    set_profile($pdo, $id);
+}

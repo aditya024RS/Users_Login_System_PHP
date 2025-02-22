@@ -4,8 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $username = $_POST["username"];
     $pwd = $_POST["pwd"];
-    $firstname = $_POST["firstname"];
-    $surname = $_POST["surname"];
+    $firstname = trim($_POST["firstname"]);
+    $surname = trim($_POST["surname"]);
     $gender = $_POST["gender"];
     $DOBday = $_POST["DOBday"];
     $DOBmonth = $_POST["DOBmonth"];
@@ -51,6 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
         create_user($pdo, $username, $pwd, $firstname, $surname, $gender, $DOBday, $DOBmonth, $DOByear);
+
+        $result = get_id($pdo, $username);
+        create_profile($pdo, $result['id']);
 
         header("Location: ../sign_up.php?signup=success");
 

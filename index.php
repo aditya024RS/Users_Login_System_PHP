@@ -24,7 +24,7 @@
         <div class="index-main-form">
             <form action="includes/login.inc.php" method="post">
                 <?php check_login_errors(); ?>
-                <input type="text" name="username" id="username" placeholder="Email address or phone number" autocomplete="$_COOKIE">
+                <input type="text" name="username" id="username" placeholder="Email address or phone number" autocomplete="off">
                 <input type="password" name="pwd" id="pwd" placeholder="Password"> <br>
                 <button type="submit">Log in</button>
                 <a href="#">Forgotten Password?</a>
