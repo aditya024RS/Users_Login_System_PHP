@@ -14,6 +14,7 @@ require_once 'dbh.inc.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_SESSION['user_id'];
     $profile_about = $_POST['profile_about'];
+    $old_pp = $_SESSION['profile_pic'];
 
     // Handle profile picture upload
     if (!empty($_FILES['profile_pic']['name'])) {
@@ -22,15 +23,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $file_extension = pathinfo($_FILES['profile_pic']['name'], PATHINFO_EXTENSION);
         $unique_file_name = uniqid() . '.' . $file_extension;
         $target_file = $target_dir . $unique_file_name;
-
+        $old_pp_des = $target_dir . $old_pp;
+        unlink($old_pp_des);
         if (move_uploaded_file($_FILES['profile_pic']['tmp_name'], $target_file)) {
             $profile_pic = $target_file;
             
         } else {
-          $profile_pic = $_SESSION['profile_pic'];
+          $profile_pic = $old_pp;
         }
     } else {
-      $profile_pic = $_SESSION['profile_pic'];
+      $profile_pic = $old_pp;
     }
 
     // Update the profiles table

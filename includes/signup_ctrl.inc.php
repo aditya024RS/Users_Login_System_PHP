@@ -3,7 +3,7 @@
 declare(strict_types = 1);
 
 function is_input_empty(string $username, string $pwd, string $firstname, string $surname, string $gender, int $DOBday, int $DOBmonth, int $DOByear) { 
-    if (empty($username) || empty($pwd) || empty($firstname) || empty($surname) || empty($gender) || $DOBday === '00' || $DOBmonth === '00' || $DOByear === '0000') {
+    if (empty($username) || empty($pwd) || empty($firstname) || empty($surname) || empty($gender) || $DOBday === 0 || $DOBmonth === 0 || $DOByear === 0) {
         return true;
     } else {
         return false;

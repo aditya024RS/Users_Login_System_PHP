@@ -27,7 +27,7 @@
                 <input type="text" name="username" id="username" placeholder="Email address or phone number" autocomplete="off">
                 <input type="password" name="pwd" id="pwd" placeholder="Password"> <br>
                 <button type="submit">Log in</button>
-                <a href="#">Forgotten Password?</a>
+                <a href="forgot_pass.php">Forgotten Password?</a>
             </form>
             <a href="sign_up.php" class><div class="index-create-account">
                 Create new account
