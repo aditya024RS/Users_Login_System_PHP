@@ -153,6 +153,7 @@ button:hover {
   color: #ff0000;
   margin-bottom: 1.6rem;
   font-size: 1.8rem;
+  text-shadow: 0 0 4px rgb(183, 210, 253);
   text-align: center;
 }
 
@@ -160,6 +161,7 @@ button:hover {
   color: #28a745; 
   margin-bottom: 1.6rem;
   font-size: 1.8rem;
+  text-shadow: 0 0 4px rgb(183, 210, 253);
   text-align: center;
 }
 
