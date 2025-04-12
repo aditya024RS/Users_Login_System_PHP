@@ -24,7 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $unique_file_name = uniqid() . '.' . $file_extension;
         $target_file = $target_dir . $unique_file_name;
         $old_pp_des = $target_dir . $old_pp;
-        unlink($old_pp_des);
+        if($old_pp !== 'default_profile_pic.jpg')
+         {unlink($old_pp_des);}
         if (move_uploaded_file($_FILES['profile_pic']['tmp_name'], $target_file)) {
             $profile_pic = $target_file;
             
